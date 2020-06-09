@@ -32,7 +32,9 @@ class _indexState extends State<index> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: Column(
+        
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Padding(
@@ -42,6 +44,7 @@ class _indexState extends State<index> {
               radius: 50.0,
             ),
           ),
+          
           Card(
             child: Column(
               children: <Widget>[
@@ -122,9 +125,50 @@ class _indexState extends State<index> {
               ],
             ),
           ),
-          Text("Skills"),
+          Text(
+            "Skills",
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Card(
+            elevation: 2.0,
+            child: ListTile(
+              title: Text("Web Development"),
+              subtitle: Text("HTML5 CSS3 JS"),
+            ),
+          ),
+          Card(
+            elevation: 2.0,
+            child: ListTile(
+              title: Text("App Development"),
+              subtitle: Text("Dart & Flutter"),
+            ),
+          ),
+          Card(
+            
+            elevation: 2.0,
+            child: ListTile(
+              title: Text("Back-End Development"),
+              subtitle: Text("Java PHP Python"),
+            ),
+          ),
+          Card(
+            elevation: 2.0,
+          
+            child: ListTile(
+           
+            
+              title: Text("Database Management"),
+              subtitle: Text("MYSQL NOSQL MangoDB"),
+            ),
+          ),
+          
+          
         ],
       ),
+      
     );
   }
 }
